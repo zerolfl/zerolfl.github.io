@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>ANC-线性方程组的迭代解法</title>
+      <link href="2021/01/12/ANC-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E8%A7%A3%E6%B3%95/"/>
+      <url>2021/01/12/ANC-%E7%BA%BF%E6%80%A7%E6%96%B9%E7%A8%8B%E7%BB%84%E7%9A%84%E8%BF%AD%E4%BB%A3%E8%A7%A3%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="线性方程组的迭代解法"><a href="#线性方程组的迭代解法" class="headerlink" title="线性方程组的迭代解法"></a>线性方程组的迭代解法</h1><p>直接求解应用问题中的线性方程组对计算存储和速度的要求越来越大，因此设计一个<strong>高效稳定</strong>的算法显得十分重要。在实际应用中，求解大规模<strong>稀疏线性方程组</strong>的主要方法是迭代法。</p><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><h3 id="范数"><a href="#范数" class="headerlink" title="范数"></a>范数</h3><p>其用于衡量向量和矩阵的大小。</p><p>常见的向量范数定义如下：</p><script type="math/tex; mode=display">\begin{equation}\begin{aligned}\Vert{\mathbf{x}}\Vert_{1} &= |x_{1}| + |x_{2}| + \dots + |x_{n}| \\\Vert{\mathbf{x}}\Vert_{2} &= \sqrt{|x_{1}|^{2} + |x_{2}|^{2} + \dots + |x_{n}|^{2}} \\\Vert{\mathbf{x}}\Vert_{\infty} &= \max_{1\leq i\leq n}|x_{i}| \\\Vert{\mathbf{x}}\Vert_{p} &= \left(\sum_{i=1}^{n}|x_{i}|^{p} \right)^{\frac{1}{p}}\end{aligned}\end{equation}</script><p>矩阵范数的定义：</p><script type="math/tex; mode=display">\begin{align}a &=1  &  b &=2   & c &=3   \\d &=-1 &  e &=-2  & f &=-5\end{align}</script><p>测试其他的：</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Advanced Numerical Computing </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Advanced Numerical Computing </tag>
+            
+            <tag> 数值计算 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="2020/10/02/hello-world/"/>
       <url>2020/10/02/hello-world/</url>
