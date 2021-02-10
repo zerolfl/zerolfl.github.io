@@ -1,13 +1,13 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leetcode-notes-01-preliminary | Fuling LIN</title><meta name="keywords" content="Data Structures and Algorithms,Leetcode"><meta name="author" content="Fuling LIN"><meta name="copyright" content="Fuling LIN"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Python预备知识——简单介绍。">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Leetcode-notes-01-preliminary | Fuling LIN</title><meta name="keywords" content="Data Structures and Algorithms,Leetcode"><meta name="author" content="Fuling LIN"><meta name="copyright" content="Fuling LIN"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="Python预备知识——数据类型和数据结构的简单介绍。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Leetcode-notes-01-preliminary">
 <meta property="og:url" content="https://zerolfl.github.io/2021/01/25/Leetcode-notes-01-preliminary/index.html">
 <meta property="og:site_name" content="Fuling LIN">
-<meta property="og:description" content="Python预备知识——简单介绍。">
+<meta property="og:description" content="Python预备知识——数据类型和数据结构的简单介绍。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png">
 <meta property="article:published_time" content="2021-01-25T14:11:06.000Z">
-<meta property="article:modified_time" content="2021-02-09T06:01:28.212Z">
+<meta property="article:modified_time" content="2021-02-10T15:47:56.533Z">
 <meta property="article:author" content="Fuling LIN">
 <meta property="article:tag" content="Data Structures and Algorithms">
 <meta property="article:tag" content="Leetcode">
@@ -101,7 +101,7 @@ const getScript = url => new Promise((resolve, reject) => {
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2021-02-09 14:01:28'
+  postUpdate: '2021-02-10 23:47:56'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -169,11 +169,81 @@ if (asideStatus !== undefined) {
 }const fontSizeVal = saveToLocal.get('global-font-size')
 if (fontSizeVal !== undefined) {
   document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
-}})()</script><style>#aside-content #card-toc .toc-content .toc-child { display: block!important;} </style><meta name="generator" content="Hexo 5.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://i.loli.net/2021/01/12/gwtR9D78A1UVhlj.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Fuling LIN</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Leetcode-notes-01-preliminary</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-25T14:11:06.000Z" title="发表于 2021-01-25 22:11:06">2021-01-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-02-09T06:01:28.212Z" title="更新于 2021-02-09 14:01:28">2021-02-09</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Leetcode/">Leetcode</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>15分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="number-数字"><a class="markdownIt-Anchor" href="#number-数字"></a> Number 数字</h1>
-<p>主要有四种类型：int（整型）、float（浮点数）、complex（复数）、bool（布尔值）。</p>
+}})()</script><style>#aside-content #card-toc .toc-content .toc-child { display: block!important;} </style><meta name="generator" content="Hexo 5.2.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="https://i.loli.net/2021/01/12/gwtR9D78A1UVhlj.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Fuling LIN</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Leetcode-notes-01-preliminary</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-01-25T14:11:06.000Z" title="发表于 2021-01-25 22:11:06">2021-01-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-02-10T15:47:56.533Z" title="更新于 2021-02-10 23:47:56">2021-02-10</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Leetcode/">Leetcode</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">4.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>15分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="基本概念"><a class="markdownIt-Anchor" href="#基本概念"></a> 基本概念</h1>
+<ol>
+<li>
+<p>数据类型：</p>
+<ul>
+<li>
+<p>数据类型是一种在程序员和编译器两者之间传输的信息类型，使编译器了解所要存储的数据的类型，以及所需占据的内存空间的大小。</p>
+</li>
+<li>
+<p>用来分类数据，描述具有相同<strong>属性</strong>的数据。</p>
+</li>
+<li>
+<p>表示<strong>变量的类型</strong>，其定义了特定变量将被分配<strong>所给定的数据类型</strong>的值。</p>
+<blockquote>
+<p>基本例子就是程序中所使用的各种变量的类型，如<code>int</code>、<code>char</code>、<code>string</code>。</p>
+<p>也可自己定义数据类型，例如自己实现的数据结构就可以作为一种数据类型。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>数据结构：</p>
+<ul>
+<li>
+<p>存在一种或多种特定<strong>关系</strong>的<strong>数据元素</strong>的集合。</p>
+<blockquote>
+<p>具有不同形式和不同类型的数据元素的集合，这些数据可以被某些操作所处理。</p>
+</blockquote>
+</li>
+<li>
+<p>数据结构是<strong>数据项的结构化</strong>集合，其结构性表现为<strong>数据项之间的相互联系及作用</strong>，也可以理解为定义于数据项之间的某种<strong>逻辑次序</strong>。</p>
+</li>
+<li>
+<p>数据结构<strong>具有可执行的特定的操作</strong>（如插入、删除和遍历），整个数据可以用一个对象（object）来表示，并且可以在整个程序中使用。</p>
+<blockquote>
+<p>例如，当需要存储大量个人数据（包括姓名、年龄、电话等信息）时，这种类型的数据需要复杂的数据管理，这意味着其需要多个基本（原始）数据类型所组成的数据结构来帮助数据管理，保证对数据的运算或操作能够高效实现。此时，可称这种数据结构是一种数据类型。</p>
+</blockquote>
+</li>
+<li>
+<p>根据<strong>逻辑次序的复杂程度</strong>，可以将各种数据结构划分为<strong>线性结构</strong>、<strong>半线性结构</strong>与<strong>非线性结构</strong>三大类。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>抽象数据类型：</p>
+<ul>
+<li>
+<p>一个<strong>数学模型</strong>以及定义在此数学模型上的一组操作，仅具有<strong>功能的描述和实现功能的接口</strong>。</p>
+</li>
+<li>
+<p>数据结构可以实现一个或多个特定的抽象数据类型（ADT）。</p>
+</li>
+<li>
+<p>数据结构是抽象数据类型（所提供的规范）的<strong>具体实现</strong>（concrete implementation）。</p>
+<blockquote>
+<p>例如，对栈、队列、图等概念的学习就是对某一种抽象数据类型的学习。</p>
+</blockquote>
+</li>
+<li>
+<p>抽象数据类型的实现可以采用不同的方式。</p>
+<blockquote>
+<p>例如，可以使用数组或链表等数据结构来完成对ADT队列的实现。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="python内置的数据类型与数据结构"><a class="markdownIt-Anchor" href="#python内置的数据类型与数据结构"></a> Python内置的数据类型与数据结构</h1>
+<h2 id="基本数据类型"><a class="markdownIt-Anchor" href="#基本数据类型"></a> 基本数据类型</h2>
+<h3 id="number-数字"><a class="markdownIt-Anchor" href="#number-数字"></a> Number 数字</h3>
+<p>主要有四种<strong>类型</strong>：<code>int</code>（整型）、<code>float</code>（浮点数）、<code>complex</code>（复数）、<code>bool</code>（布尔值）。</p>
 <p>运算：<code>+</code>、<code>-</code>、<code>*</code>、<code>/</code>、<code>//</code>（整除）、<code>%</code>（取余）。</p>
 <p>常用函数：<code>abs(n)</code>（取绝对值）、<code>max()</code>、<code>min()</code>、<code>power(x,y)</code>（<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>x</mi><mi>y</mi></msup></mrow><annotation encoding="application/x-tex">x^y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.664392em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.664392em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">y</span></span></span></span></span></span></span></span></span></span></span>）、<code>sqrt()</code>（不属于Python的内置函数，需要<code>import math</code>）。</p>
-<h1 id="list-列表"><a class="markdownIt-Anchor" href="#list-列表"></a> List 列表</h1>
+<h2 id="内置数据结构"><a class="markdownIt-Anchor" href="#内置数据结构"></a> 内置数据结构</h2>
+<h3 id="list-列表"><a class="markdownIt-Anchor" href="#list-列表"></a> List 列表</h3>
 <p>用<code>[]</code>括起来的数据集。</p>
 <blockquote>
 <p>索引是从0开始的。</p>
@@ -241,7 +311,7 @@ if (fontSizeVal !== undefined) {
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line">b = [i * i <span class="keyword">if</span> i &lt; <span class="number">3</span> <span class="keyword">else</span> i <span class="keyword">for</span> i <span class="keyword">in</span> a] <span class="comment"># 只有满足条件的元素才运算</span></span><br><span class="line"><span class="meta">&gt;&gt;&gt; </span>b = [<span class="number">1</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h1 id="tuple-元组"><a class="markdownIt-Anchor" href="#tuple-元组"></a> Tuple 元组</h1>
+<h3 id="tuple-元组"><a class="markdownIt-Anchor" href="#tuple-元组"></a> Tuple 元组</h3>
 <p>用<code>()</code>括起来的数据集。</p>
 <p>里面的元素可以是相同类型或不同类型的元素。</p>
 <p>List与Tuple的区别：</p>
@@ -274,7 +344,7 @@ if (fontSizeVal !== undefined) {
 <li>当<code>a = (1)</code>时，<code>a</code>是int类型；</li>
 <li>当<code>a = (1,)</code>时，<code>a</code>是tuple类型；</li>
 </ul>
-<h1 id="set-集合"><a class="markdownIt-Anchor" href="#set-集合"></a> Set 集合</h1>
+<h3 id="set-集合"><a class="markdownIt-Anchor" href="#set-集合"></a> Set 集合</h3>
 <p>用<code>&#123;&#125;</code>括起来的数据集，且其中所有的元素是<strong>唯一</strong>的。</p>
 <p>set中的元素是<strong>无序</strong>的，即<strong>不是按照索引</strong>来获取对应值的。</p>
 <blockquote>
@@ -312,7 +382,7 @@ if (fontSizeVal !== undefined) {
 <li><code>^</code>：如<code>a ^ b</code>指<code>a</code>和<code>b</code>中不同时有的元素（并集减交集）</li>
 </ol>
 <p>常见的set：HashSet（比较常见）、LinkListSet、TreeSet。</p>
-<h1 id="dictionary-字典"><a class="markdownIt-Anchor" href="#dictionary-字典"></a> Dictionary 字典</h1>
+<h3 id="dictionary-字典"><a class="markdownIt-Anchor" href="#dictionary-字典"></a> Dictionary 字典</h3>
 <p>用<code>&#123;&#125;</code>括起来，元素为键-值对<code>key:value</code>。</p>
 <blockquote>
 <p>如<code>a = &#123;&quot;name&quot;:&quot;learning&quot;, &quot;age&quot;:18&#125;</code>。</p>
@@ -342,7 +412,7 @@ if (fontSizeVal !== undefined) {
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> a: <span class="comment"># 只有a表示只看key</span></span><br><span class="line">    print(key) <span class="comment"># 遍历键key</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> a.values(): <span class="comment"># a.values()表示看a中的所有值</span></span><br><span class="line">    print(value) <span class="comment"># 遍历值value</span></span><br><span class="line">    </span><br><span class="line"><span class="keyword">for</span> k,v <span class="keyword">in</span> a.items(): <span class="comment"># a.items()表示看a中的所有元素（键-值对）</span></span><br><span class="line">    print(k,v) <span class="comment"># 遍历键-值对</span></span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h1 id="string-字符串"><a class="markdownIt-Anchor" href="#string-字符串"></a> String 字符串</h1>
+<h3 id="string-字符串"><a class="markdownIt-Anchor" href="#string-字符串"></a> String 字符串</h3>
 <p>用<code>&quot;&quot;</code>引起来的内容，其中每个元素为字符。即，由一个个字符所组成的数组。</p>
 <p>以<code>a = &quot;hello World&quot;</code>为例，常用操作：</p>
 <ol>
@@ -395,7 +465,8 @@ if (fontSizeVal !== undefined) {
 <li><code>max(a)</code>：取ascii码最大的字符</li>
 <li><code>min(a)</code>：取ascii码最小的字符</li>
 </ol>
-<h1 id="array-数组"><a class="markdownIt-Anchor" href="#array-数组"></a> Array 数组</h1>
+<h1 id="常见数据结构"><a class="markdownIt-Anchor" href="#常见数据结构"></a> 常见数据结构</h1>
+<h3 id="array-数组"><a class="markdownIt-Anchor" href="#array-数组"></a> Array 数组</h3>
 <p>其元素<strong>类型相同</strong>，且需要用一块<strong>连续的内存空间</strong>来存储的数据集。</p>
 <p>可以用List来表示Array，要求List中的元素类型相同。</p>
 <p>优点：正查（访问，access）的时间复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>；</p>
@@ -404,7 +475,7 @@ if (fontSizeVal !== undefined) {
 <p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span>表示数组长度。</p>
 <p>适合读，不适合写。</p>
 </blockquote>
-<h1 id="linkedlist-链表"><a class="markdownIt-Anchor" href="#linkedlist-链表"></a> LinkedList 链表</h1>
+<h3 id="linkedlist-链表"><a class="markdownIt-Anchor" href="#linkedlist-链表"></a> LinkedList 链表</h3>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment"># Definition for singly-linked list.</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ListNode</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, x</span>):</span></span><br><span class="line">        self.val = x</span><br><span class="line">        self.next = <span class="literal">None</span></span><br></pre></td></tr></table></figure>
 <p>链表的元素是节点，每个节点包含两个信息（<strong>值</strong>和<strong>指向下一个Node的信息</strong>）。</p>
 <p>数组和链表的区别：</p>
@@ -461,7 +532,7 @@ if (fontSizeVal !== undefined) {
 </blockquote>
 </li>
 </ol>
-<h1 id="hash-table-哈希表"><a class="markdownIt-Anchor" href="#hash-table-哈希表"></a> Hash Table 哈希表</h1>
+<h3 id="hash-table-哈希表"><a class="markdownIt-Anchor" href="#hash-table-哈希表"></a> Hash Table 哈希表</h3>
 <p>Python的<code>dictionary</code>就是一种哈希表（散列表）。</p>
 <p>通过哈希算法将<code>key</code>映射成一个唯一一个索引，来帮助访问对应的<code>value</code>。</p>
 <p>优点：正查、插入和删除的时间复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>；</p>
@@ -469,7 +540,7 @@ if (fontSizeVal !== undefined) {
 <p>读写都OK。</p>
 </blockquote>
 <p>哈希碰撞：2个不同的<code>key</code>通过一个哈希函数得到相同的内存地址。解决方法：例如可以使用链表来解决。</p>
-<h1 id="queue-队列"><a class="markdownIt-Anchor" href="#queue-队列"></a> Queue 队列</h1>
+<h3 id="queue-队列"><a class="markdownIt-Anchor" href="#queue-队列"></a> Queue 队列</h3>
 <p>队列Queue：队列仅有<strong>一个入口</strong>和<strong>一个出口</strong>。</p>
 <p>双端队列Deque：数据项既可以从队首加入，也可以从队尾加入；数据项也可以从两端移除。</p>
 <blockquote>
@@ -521,7 +592,7 @@ if (fontSizeVal !== undefined) {
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">while</span> len(queue) != <span class="number">0</span>:</span><br><span class="line">    temp = queue.popleft()</span><br><span class="line">    print(temp)</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h1 id="stack-栈"><a class="markdownIt-Anchor" href="#stack-栈"></a> Stack 栈</h1>
+<h3 id="stack-栈"><a class="markdownIt-Anchor" href="#stack-栈"></a> Stack 栈</h3>
 <p>数据项的加入和移除都<strong>仅发生在同一端</strong>（栈顶）。</p>
 <blockquote>
 <p>后入先出（Last-In First Out，LIFO）；如浏览器后退功能。</p>
@@ -529,7 +600,7 @@ if (fontSizeVal !== undefined) {
 <p>主要用在DFS中。</p>
 </blockquote>
 <p>可以直接用Python的List来实现栈的一些操作。</p>
-<h1 id="heap-堆"><a class="markdownIt-Anchor" href="#heap-堆"></a> Heap 堆</h1>
+<h3 id="heap-堆"><a class="markdownIt-Anchor" href="#heap-堆"></a> Heap 堆</h3>
 <p>一种<strong>完全二叉树</strong>的结构，且每个节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≥</mo></mrow><annotation encoding="application/x-tex">\geq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≥</span></span></span></span>子节点（最大堆），或每个节点<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>≤</mo></mrow><annotation encoding="application/x-tex">\leq</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7719400000000001em;vertical-align:-0.13597em;"></span><span class="mrel">≤</span></span></span></span>子节点（最小堆）。</p>
 <p>最大堆：<strong>堆顶是最大值</strong>，每次<code>pop()</code>都pop掉这组数的最大值（堆顶元素）；</p>
 <p>最小堆：<strong>堆顶是最小值</strong>，每次<code>pop()</code>都pop掉这组数的最小值（堆顶元素）。</p>
@@ -544,7 +615,7 @@ if (fontSizeVal !== undefined) {
 <p>第一个箭头：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>，只要遍历一次数组即可构建；</p>
 <p>第二个箭头：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>，最差的情况就是每层元素需要一直往下去交换，相当于每层需要操作数=每层元素*单元素逐渐往下交换的次数（从该层走下最底层）。</p>
 </blockquote>
-<h1 id="tree-树"><a class="markdownIt-Anchor" href="#tree-树"></a> Tree 树</h1>
+<h3 id="tree-树"><a class="markdownIt-Anchor" href="#tree-树"></a> Tree 树</h3>
 <p>连接的节点与节点之间有<strong>父子关系</strong>。</p>
 <p>节点：</p>
 <ul>
@@ -622,7 +693,7 @@ if (fontSizeVal !== undefined) {
 <p>创建树的话，可使用一个队列来记录父节点，遍历指定数组并将其元素压入父节点队列，每当一个子树构建完成后，将队列中的首父节点弹出。</p>
 <p>需要注意：是树节点（Class TreeNode）为None，还是树节点的Value为None。</p>
 </blockquote>
-<h1 id="graph-图"><a class="markdownIt-Anchor" href="#graph-图"></a> Graph 图</h1>
+<h3 id="graph-图"><a class="markdownIt-Anchor" href="#graph-图"></a> Graph 图</h3>
 <p>节点与节点之间不是父子关系，其可理解为<strong>朋友或邻居关系</strong>。</p>
 <p>从某个节点到某个节点可能<strong>不止一条路径</strong>。</p>
 <p>重要概念：</p>
@@ -654,105 +725,10 @@ if (fontSizeVal !== undefined) {
 </blockquote>
 </li>
 </ul>
-<h1 id="leetcode"><a class="markdownIt-Anchor" href="#leetcode"></a> Leetcode</h1>
-<p>Array 数组：</p>
-<ul>
-<li>[x] 485：Max Consecutive Ones</li>
-<li>[x] 283：Move Zeros</li>
-<li>[x] 27：Remove Element</li>
-</ul>
-<blockquote>
-<p>Hint：基本都是双指针类型，要么一快一慢，要么一头一尾。</p>
-</blockquote>
-<p>LinkedList 链表：</p>
-<ul>
-<li>
-<p>[x] 203：Remove Linked List Elements</p>
-<blockquote>
-<p>Hint：尝试添加虚拟（临时、dummy）节点使链表永不为空、永不无头，简化插入和删除。</p>
-</blockquote>
-</li>
-<li>
-<p>[x] 206：Reverse Linked List</p>
-</li>
-</ul>
-<p>Queue 队列</p>
-<ul>
-<li>
-<p>[x] 933：Number of Recent Calls</p>
-<blockquote>
-<p>Hint：请求不断进入，只要看队首满不满足要求即可。</p>
-</blockquote>
-</li>
-</ul>
-<p>Stack 栈：</p>
-<ul>
-<li>
-<p>[x] 20：Valid Parentheses</p>
-</li>
-<li>
-<p>[x] 496：Next Great Element I</p>
-<blockquote>
-<p>Hint：用到了哈希表和单调栈，如果要求不能暴力解，这题应该算Medium。</p>
-</blockquote>
-</li>
-</ul>
-<p>Hash Table 哈希表：</p>
-<ul>
-<li>[x] 217：Contains Duplicate</li>
-<li>[x] 389：Find the difference</li>
-<li>[x] 496：Next Great Element I</li>
-</ul>
-<p>Set 集合：</p>
-<ul>
-<li>
-<p>[x] 217：Contains Duplicate</p>
-</li>
-<li>
-<p>[x] 705：Design Hashset</p>
-<blockquote>
-<p>705 Hint：设计题！</p>
-<p>简单做法：直接用数组来做，其索引作为<code>key</code>，<code>bool</code>类型值作为<code>value</code>。</p>
-<p>复杂做法：使用<strong>散列函数</strong>，并在<strong>哈希碰撞</strong>处使用链表解决。（链地址法）</p>
-<p>哈希函数的共同特点是使用模运算符：<code>hash = value mod base</code>。<code>base</code>的选择是空间和碰撞之间的权衡，且常选择质数。</p>
-<p>该题提前已知总操作数有10000，那么<code>base</code>可以选择769，使用链表（借用python的deque）解决冲突时，这样平均下来具有冲突的链表最多只需要存14个数。（即一个长度为769大小的列表，列表中的元素为链表）。</p>
-<p>如此，该Hashset的访问、插入和删除元素时间复杂度为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mstyle displaystyle="true" scriptlevel="0"><mfrac><mi>n</mi><mtext>base</mtext></mfrac></mstyle><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\dfrac{n}{\text{base}})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.7935600000000003em;vertical-align:-0.686em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.10756em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">base</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose">)</span></span></span></span>。（最坏情况下需要遍历某支链表）</p>
-</blockquote>
-</li>
-</ul>
-<p>Tree 树：</p>
-<ul>
-<li>[x] 144：Binary Tree Preorder Traversal</li>
-<li>[x] 94：Binary Tree Inorder Traversal</li>
-<li>[x] 145：Binary Tree Postorder Traversal</li>
-</ul>
-<blockquote>
-<ol>
-<li>
-<p>使用递归法（DFS），模板基本定型，容易理解。时间：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>；空间：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>，最差<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>。</p>
-</li>
-<li>
-<p>使用迭代法，比较考验对数的理解能力，相当于把递归栈给显式的编写出来。时间：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>；空间：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>log</mi><mo>⁡</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(\log n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mop">lo<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>，最差<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>。</p>
-</li>
-<li>
-<p>使用Morris遍历（有点<strong>中序线索二叉树</strong>的感觉，不过可以用来遍历二叉树，改变打印位置即可实现不同的遍历次序）（超强进阶算法）。时间：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span>；空间：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>。</p>
-</li>
-</ol>
-<p>另外，还有线索二叉树（Threaded BinaryTree），利用了二叉树中的空指针域来存放在某种遍历次序下的<strong>前驱</strong>和<strong>后继</strong>。根据遍历次序的不同，线索二叉树可以分为<strong>前序线索</strong>二叉树、<strong>中序线索</strong>二叉树和<strong>后序线索</strong>二叉树。</p>
-</blockquote>
-<p>Heap 堆：</p>
-<ul>
-<li>[x] 215：kth Largest Element in an Array</li>
-<li>[x] 692：Top k Frequent Words</li>
-</ul>
-<p>Graph 图：</p>
-<blockquote>
-<p>概念其实不算重要，重要的是了解其相关算法。</p>
-</blockquote>
 <h1 id="参考资料"><a class="markdownIt-Anchor" href="#参考资料"></a> 参考资料</h1>
 <div class="note blue icon flat"><i class="note-icon fas fa-bookmark"></i><p>[1] <a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Lk4y117Cb">Python数据结构</a></p>
 </div>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Fuling LIN</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zerolfl.github.io/2021/01/25/Leetcode-notes-01-preliminary/">https://zerolfl.github.io/2021/01/25/Leetcode-notes-01-preliminary/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zerolfl.github.io" target="_blank">Fuling LIN</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Data-Structures-and-Algorithms/">Data Structures and Algorithms</a><a class="post-meta__tags" href="/tags/Leetcode/">Leetcode</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/"><img class="prev-cover" src="https://i.loli.net/2021/02/03/KgNmWFSktulMraA.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Leetcode-notes-02-data-structure-exercises</div></div></a></div><div class="next-post pull-right"><a href="/2021/01/23/DSA-03-linear-structure/"><img class="next-cover" src="https://i.loli.net/2021/01/25/hnzJTSvajqubZ3o.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">DSA-03-linear-structure</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/" title="Leetcode-notes-02-data-structure-exercises"><img class="cover" src="https://i.loli.net/2021/02/03/KgNmWFSktulMraA.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-03</div><div class="title">Leetcode-notes-02-data-structure-exercises</div></div></a></div><div><a href="/2021/01/18/DSA-01-introduction/" title="DSA-01-introduction"><img class="cover" src="https://i.loli.net/2021/01/19/XHnU2Obvjr9mqWc.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-18</div><div class="title">DSA-01-introduction</div></div></a></div><div><a href="/2021/01/19/DSA-02-algorithm-analysis/" title="DSA-02-algorithm-analysis"><img class="cover" src="https://i.loli.net/2021/01/19/SPb1ACaEZny4eRG.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-19</div><div class="title">DSA-02-algorithm-analysis</div></div></a></div><div><a href="/2021/01/23/DSA-03-linear-structure/" title="DSA-03-linear-structure"><img class="cover" src="https://i.loli.net/2021/01/25/hnzJTSvajqubZ3o.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-23</div><div class="title">DSA-03-linear-structure</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://i.loli.net/2021/01/12/gwtR9D78A1UVhlj.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Fuling LIN</div><div class="author-info__description">Life-Long Learning & Practice</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zerolfl"><i class="fab fa-github"></i><span>GitHub</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zerolfl" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">一次笔记与二次笔记的笔记空间。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#number-%E6%95%B0%E5%AD%97"><span class="toc-number">1.</span> <span class="toc-text"> Number 数字</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#list-%E5%88%97%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text"> List 列表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#tuple-%E5%85%83%E7%BB%84"><span class="toc-number">3.</span> <span class="toc-text"> Tuple 元组</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#set-%E9%9B%86%E5%90%88"><span class="toc-number">4.</span> <span class="toc-text"> Set 集合</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#dictionary-%E5%AD%97%E5%85%B8"><span class="toc-number">5.</span> <span class="toc-text"> Dictionary 字典</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#string-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">6.</span> <span class="toc-text"> String 字符串</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#array-%E6%95%B0%E7%BB%84"><span class="toc-number">7.</span> <span class="toc-text"> Array 数组</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#linkedlist-%E9%93%BE%E8%A1%A8"><span class="toc-number">8.</span> <span class="toc-text"> LinkedList 链表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hash-table-%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-number">9.</span> <span class="toc-text"> Hash Table 哈希表</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#queue-%E9%98%9F%E5%88%97"><span class="toc-number">10.</span> <span class="toc-text"> Queue 队列</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#stack-%E6%A0%88"><span class="toc-number">11.</span> <span class="toc-text"> Stack 栈</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#heap-%E5%A0%86"><span class="toc-number">12.</span> <span class="toc-text"> Heap 堆</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#tree-%E6%A0%91"><span class="toc-number">13.</span> <span class="toc-text"> Tree 树</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#graph-%E5%9B%BE"><span class="toc-number">14.</span> <span class="toc-text"> Graph 图</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#leetcode"><span class="toc-number">15.</span> <span class="toc-text"> Leetcode</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">16.</span> <span class="toc-text"> 参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/" title="Leetcode-notes-02-data-structure-exercises"><img src="https://i.loli.net/2021/02/03/KgNmWFSktulMraA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Leetcode-notes-02-data-structure-exercises"/></a><div class="content"><a class="title" href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/" title="Leetcode-notes-02-data-structure-exercises">Leetcode-notes-02-data-structure-exercises</a><time datetime="2021-02-03T02:59:47.000Z" title="发表于 2021-02-03 10:59:47">2021-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/25/Leetcode-notes-01-preliminary/" title="Leetcode-notes-01-preliminary"><img src="https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Leetcode-notes-01-preliminary"/></a><div class="content"><a class="title" href="/2021/01/25/Leetcode-notes-01-preliminary/" title="Leetcode-notes-01-preliminary">Leetcode-notes-01-preliminary</a><time datetime="2021-01-25T14:11:06.000Z" title="发表于 2021-01-25 22:11:06">2021-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/23/DSA-03-linear-structure/" title="DSA-03-linear-structure"><img src="https://i.loli.net/2021/01/25/hnzJTSvajqubZ3o.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DSA-03-linear-structure"/></a><div class="content"><a class="title" href="/2021/01/23/DSA-03-linear-structure/" title="DSA-03-linear-structure">DSA-03-linear-structure</a><time datetime="2021-01-23T07:25:47.000Z" title="发表于 2021-01-23 15:25:47">2021-01-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/19/DSA-02-algorithm-analysis/" title="DSA-02-algorithm-analysis"><img src="https://i.loli.net/2021/01/19/SPb1ACaEZny4eRG.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DSA-02-algorithm-analysis"/></a><div class="content"><a class="title" href="/2021/01/19/DSA-02-algorithm-analysis/" title="DSA-02-algorithm-analysis">DSA-02-algorithm-analysis</a><time datetime="2021-01-19T13:16:44.000Z" title="发表于 2021-01-19 21:16:44">2021-01-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/18/DSA-01-introduction/" title="DSA-01-introduction"><img src="https://i.loli.net/2021/01/19/XHnU2Obvjr9mqWc.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DSA-01-introduction"/></a><div class="content"><a class="title" href="/2021/01/18/DSA-01-introduction/" title="DSA-01-introduction">DSA-01-introduction</a><time datetime="2021-01-18T13:29:04.000Z" title="发表于 2021-01-18 21:29:04">2021-01-18</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png)"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2021 By Fuling LIN</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>(() => {
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Fuling LIN</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://zerolfl.github.io/2021/01/25/Leetcode-notes-01-preliminary/">https://zerolfl.github.io/2021/01/25/Leetcode-notes-01-preliminary/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://zerolfl.github.io" target="_blank">Fuling LIN</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Data-Structures-and-Algorithms/">Data Structures and Algorithms</a><a class="post-meta__tags" href="/tags/Leetcode/">Leetcode</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/"><img class="prev-cover" src="https://i.loli.net/2021/02/03/KgNmWFSktulMraA.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">Leetcode-notes-02-data-structure-exercises</div></div></a></div><div class="next-post pull-right"><a href="/2021/01/23/DSA-03-linear-structure/"><img class="next-cover" src="https://i.loli.net/2021/01/25/hnzJTSvajqubZ3o.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">DSA-03-linear-structure</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/" title="Leetcode-notes-02-data-structure-exercises"><img class="cover" src="https://i.loli.net/2021/02/03/KgNmWFSktulMraA.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-02-03</div><div class="title">Leetcode-notes-02-data-structure-exercises</div></div></a></div><div><a href="/2021/01/18/DSA-01-introduction/" title="DSA-01-introduction"><img class="cover" src="https://i.loli.net/2021/01/19/XHnU2Obvjr9mqWc.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-18</div><div class="title">DSA-01-introduction</div></div></a></div><div><a href="/2021/01/19/DSA-02-algorithm-analysis/" title="DSA-02-algorithm-analysis"><img class="cover" src="https://i.loli.net/2021/01/19/SPb1ACaEZny4eRG.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-19</div><div class="title">DSA-02-algorithm-analysis</div></div></a></div><div><a href="/2021/01/23/DSA-03-linear-structure/" title="DSA-03-linear-structure"><img class="cover" src="https://i.loli.net/2021/01/25/hnzJTSvajqubZ3o.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-01-23</div><div class="title">DSA-03-linear-structure</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-info-avatar is-center"><img class="avatar-img" src="https://i.loli.net/2021/01/12/gwtR9D78A1UVhlj.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">Fuling LIN</div><div class="author-info__description">Life-Long Learning & Practice</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zerolfl"><i class="fab fa-github"></i><span>GitHub</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/zerolfl" target="_blank" title="Github"><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">一次笔记与二次笔记的笔记空间。</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text"> 基本概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#python%E5%86%85%E7%BD%AE%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text"> Python内置的数据类型与数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.1.</span> <span class="toc-text"> 基本数据类型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#number-%E6%95%B0%E5%AD%97"><span class="toc-number">2.1.1.</span> <span class="toc-text"> Number 数字</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E7%BD%AE%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">2.2.</span> <span class="toc-text"> 内置数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#list-%E5%88%97%E8%A1%A8"><span class="toc-number">2.2.1.</span> <span class="toc-text"> List 列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tuple-%E5%85%83%E7%BB%84"><span class="toc-number">2.2.2.</span> <span class="toc-text"> Tuple 元组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#set-%E9%9B%86%E5%90%88"><span class="toc-number">2.2.3.</span> <span class="toc-text"> Set 集合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#dictionary-%E5%AD%97%E5%85%B8"><span class="toc-number">2.2.4.</span> <span class="toc-text"> Dictionary 字典</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#string-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">2.2.5.</span> <span class="toc-text"> String 字符串</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">3.</span> <span class="toc-text"> 常见数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#array-%E6%95%B0%E7%BB%84"><span class="toc-number">3.0.1.</span> <span class="toc-text"> Array 数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#linkedlist-%E9%93%BE%E8%A1%A8"><span class="toc-number">3.0.2.</span> <span class="toc-text"> LinkedList 链表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hash-table-%E5%93%88%E5%B8%8C%E8%A1%A8"><span class="toc-number">3.0.3.</span> <span class="toc-text"> Hash Table 哈希表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#queue-%E9%98%9F%E5%88%97"><span class="toc-number">3.0.4.</span> <span class="toc-text"> Queue 队列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#stack-%E6%A0%88"><span class="toc-number">3.0.5.</span> <span class="toc-text"> Stack 栈</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#heap-%E5%A0%86"><span class="toc-number">3.0.6.</span> <span class="toc-text"> Heap 堆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#tree-%E6%A0%91"><span class="toc-number">3.0.7.</span> <span class="toc-text"> Tree 树</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#graph-%E5%9B%BE"><span class="toc-number">3.0.8.</span> <span class="toc-text"> Graph 图</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99"><span class="toc-number">4.</span> <span class="toc-text"> 参考资料</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/" title="Leetcode-notes-02-data-structure-exercises"><img src="https://i.loli.net/2021/02/03/KgNmWFSktulMraA.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Leetcode-notes-02-data-structure-exercises"/></a><div class="content"><a class="title" href="/2021/02/03/Leetcode-notes-02-data-structure-exercises/" title="Leetcode-notes-02-data-structure-exercises">Leetcode-notes-02-data-structure-exercises</a><time datetime="2021-02-03T02:59:47.000Z" title="发表于 2021-02-03 10:59:47">2021-02-03</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/25/Leetcode-notes-01-preliminary/" title="Leetcode-notes-01-preliminary"><img src="https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Leetcode-notes-01-preliminary"/></a><div class="content"><a class="title" href="/2021/01/25/Leetcode-notes-01-preliminary/" title="Leetcode-notes-01-preliminary">Leetcode-notes-01-preliminary</a><time datetime="2021-01-25T14:11:06.000Z" title="发表于 2021-01-25 22:11:06">2021-01-25</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/23/DSA-03-linear-structure/" title="DSA-03-linear-structure"><img src="https://i.loli.net/2021/01/25/hnzJTSvajqubZ3o.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DSA-03-linear-structure"/></a><div class="content"><a class="title" href="/2021/01/23/DSA-03-linear-structure/" title="DSA-03-linear-structure">DSA-03-linear-structure</a><time datetime="2021-01-23T07:25:47.000Z" title="发表于 2021-01-23 15:25:47">2021-01-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/19/DSA-02-algorithm-analysis/" title="DSA-02-algorithm-analysis"><img src="https://i.loli.net/2021/01/19/SPb1ACaEZny4eRG.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DSA-02-algorithm-analysis"/></a><div class="content"><a class="title" href="/2021/01/19/DSA-02-algorithm-analysis/" title="DSA-02-algorithm-analysis">DSA-02-algorithm-analysis</a><time datetime="2021-01-19T13:16:44.000Z" title="发表于 2021-01-19 21:16:44">2021-01-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/01/18/DSA-01-introduction/" title="DSA-01-introduction"><img src="https://i.loli.net/2021/01/19/XHnU2Obvjr9mqWc.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DSA-01-introduction"/></a><div class="content"><a class="title" href="/2021/01/18/DSA-01-introduction/" title="DSA-01-introduction">DSA-01-introduction</a><time datetime="2021-01-18T13:29:04.000Z" title="发表于 2021-01-18 21:29:04">2021-01-18</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://i.loli.net/2021/02/03/saAjHneoWRFdbIN.png)"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2021 By Fuling LIN</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>(() => {
   document.querySelectorAll('#article-container span.katex-display').forEach(item => {
     btf.wrap(item, 'div', '', 'katex-wrap')
   })
