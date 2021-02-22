@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Leetcode-notes-03-algorithm-exercises</title>
+      <link href="2021/02/22/Leetcode-notes-03-algorithm-exercises/"/>
+      <url>2021/02/22/Leetcode-notes-03-algorithm-exercises/</url>
+      
+        <content type="html"><![CDATA[<h1 id="双指针-two-pointers"><a class="markdownIt-Anchor" href="#双指针-two-pointers"></a> 双指针 Two Pointers</h1><p>”多指针“做法算是一种技巧，一般可以分为：</p><ul><li><p>普通双指针：两个指针往同一个方向移动；</p></li><li><p>对撞双指针：两个指针面对面移动；</p></li><li><p>快慢双指针。</p><blockquote><p>如在检测环形链表的做法中，慢指针每次移动一步，快指针每次移动两步。</p></blockquote></li></ul><p>如，<code>a = [1, 4, 5, 7, 9]</code>，找到两个不同的数之和为12：</p><ul><li>普通双指针：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>N</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>；</li><li>对撞双指针：得益于<code>a</code>是一个<strong>有序</strong>数组，这种做法只需<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(N)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">N</span><span class="mclose">)</span></span></span></span>。</li></ul><h2 id="例题"><a class="markdownIt-Anchor" href="#例题"></a> 例题</h2><ul><li>[x] 141：环形链表（Linked List Cycle）</li><li>[ ] 881：救生艇（Boats to Save People）</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> Leetcode </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Data Structures and Algorithms </tag>
+            
+            <tag> Leetcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>DSA-04-recursion</title>
       <link href="2021/02/16/DSA-04-recursion/"/>
       <url>2021/02/16/DSA-04-recursion/</url>
